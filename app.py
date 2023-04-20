@@ -61,7 +61,7 @@ def membership():
         phone = request.form['phone']
         address = request.form['address']
         city = request.form['city']
-        postalcod = request.form['postalcod']
+        postalcod = request.form['postalcode']
         country = request.form['country']
         gender = request.form['gender']
         offer = request.form['offertype']
@@ -187,7 +187,7 @@ def employee_reservations_detailed(id):
 def employee_support_center():
     if 'loggedin' in session:
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute("SELECT id, firstname, lastname FROM contact ORDER BY cid DESC")
+        cursor.execute("SELECT cid, firstname, lastname FROM contact ORDER BY cid DESC")
         ticket_list = cursor.fetchall()
         return render_template('employee-support_center.html', ticket_list=ticket_list)
     else:
