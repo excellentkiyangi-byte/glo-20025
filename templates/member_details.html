@@ -1,0 +1,74 @@
+{% extends 'base_admin_interface.html' %}
+
+{% block title %} Members Details {% endblock %}
+
+{% block content %}
+<h1>Member Details</h1>
+<table class="styled-table">
+  <thead>
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Gender</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Postal Code</th>
+        <th>Country</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{member['id']}}</td>
+        <td>{{member['firstname']}}</td>
+        <td>{{member['lastname']}}</td>
+        <td>{{member['email']}}</td>
+        <td>{{member['phone']}}</td>
+        <th>{{member['gender']}}</th>
+        <th>{{member['address']}}</th>
+        <th>{{member['city']}}</th>
+        <th>{{member['postalcode']}}</th>
+        <th>{{member['country']}}</th>
+        <th>{{member['offertype']}}</th>
+      </tr>
+    </tbody>
+</table>
+
+<style>
+  .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+</style>
+
+{% endblock %}

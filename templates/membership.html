@@ -1,0 +1,142 @@
+{% extends 'base_user_interface.html' %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+<div class="membership-header-block">
+    <h1>Membership</h1>
+</div>
+
+<div class="membership-block">
+    <div class="membership-offers">
+        <div class="offer">
+            <div class="offer-header">
+                <h2>Chauffeur Card</h2>
+            </div>
+            <div class="offer-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga incidunt quo velit! Ea est
+            illum nobis suscipit? Aliquid illo nostrum quaerat reiciendis velit. A assumenda culpa maiores numquam
+            veritatis.Accusamus atque consequatur doloribus eaque eligendi eum exercitationem facere fuga laboriosam
+            nesciunt nihil nobis officiis omnis quaerat quam quidem, repellendus soluta? Ad, non numquam!
+            Consectetur in ipsa provident recusandae soluta!</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga incidunt quo velit! Ea est
+            illum nobis suscipit</li>
+                </ul>
+                <p>Price per Car: £70.00 per month. (Minimum commitment 12 months) Special Offer: 1 month free when you
+                    buy 12 months, £840</p>
+            </div>
+            <a href="" class="order-button">Order</a>
+        </div>
+        <div class="offer">
+            <div class="offer-header">
+                <h2>Black Cab Card</h2>
+            </div>
+            <div class="offer-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga incidunt quo velit! Ea est
+            illum nobis suscipit? Aliquid illo nostrum quaerat reiciendis velit. A assumenda culpa maiores numquam
+            veritatis.</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                </ul>
+                <p>Price per Cab: £46 per month. (Minimum commitment 12 months). Special Offer: 1 month free when you
+                    buy 12 months in advance, £552</p>
+            </div>
+            <a href="" class="order-button">Order</a>
+        </div>
+        <div class="offer">
+            <div class="offer-header">
+                <h2>Economy Card</h2>
+            </div>
+            <div class="offer-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga incidunt quo velit! Ea est
+            illum nobis suscipit</p>
+                <ul>
+                    <li>Monthly Price per Car: £25.95</li>
+                    <li>Then pay only £3.25/£4.25 each time you visit</li>
+                </ul>
+            </div>
+            <a href="" class="order-button">Order</a>
+        </div>
+        <div class="offer">
+            <div class="offer-header">
+                <h2>Platinum Card</h2>
+            </div>
+            <div class="offer-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga incidunt quo velit! Ea est
+            illum nobis suscipit</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga incidunt quo velit! Ea est
+            illum nobis suscipit</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga incidunt quo velit! Ea est
+            illum nobis suscipit</li>
+                    <li>Price per Car: £52.50 per month.(Minimum commitment 12 months)</li>
+                </ul>
+                <p>Special Offer One month FREE when you buy 12 months in advance, £630</p>
+            </div>
+            <a href="" class="order-button">Order</a>
+        </div>
+        <div class="offer">
+            <div class="offer-header">
+                <h2>Club Card</h2>
+            </div>
+            <div class="offer-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga incidunt quo velit! Ea est
+            illum nobis suscipit</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga incidunt quo velit! Ea est
+            illum nobis suscipit</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga incidunt quo velit! Ea est
+            illum nobis suscipit</li>
+                    <li>After 12 cleans get a free Mini Valet worth £21.95</li>
+                </ul>
+            </div>
+            <a href="" class="order-button">Order</a>
+        </div>
+
+    </div>
+    <div class="membership-form">
+    </div>
+
+    <div class="order-header-block">
+        <h1>Order Form</h1>
+    </div>
+    <div class="order-form-block">
+        <h3>Your Details:</h3>
+        <form action="" method="POST">
+            <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+            <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+            <h6>Address</h6>
+            <input type="text" id="address" name="address" placeholder="Address" required>
+            <input type="text" id="city" name="city" placeholder="City" required>
+            <input type="text" id="postalcode" name="postalcod" placeholder="Postal Code" required>
+            <input type="text" id="country" name="country" placeholder="Country" required>
+            <select name="gender" id="gender">
+                <option value="M">M</option>
+                <option value="F">F</option>
+            </select>
+            <h3>Membership Options</h3>
+            <h5>Choose an option</h5>
+            <select name="offertype" id="offertype">
+                <option value="Chauffeur Card monthly">Chauffeur Card monthly</option>
+                <option value="Chauffeur Card yearly">Chauffeur Card yearly</option>
+                <option value="Black Cab Card monthly">Black Cab Card monthly</option>
+                <option value="Black Cab Card yearly">Black Cab Card yearly</option>
+                <option value="Economy Card monthly">Economy Card monthly</option>
+                <option value="Economy Card yearly">Economy Card yearly</option>
+                <option value="Platinum Card monthly">Platinum Card monthly</option>
+                <option value="Platinum Card yearly">Platinum Card yearly</option>
+                <option value="Club Card monthly">Club Card monthly</option>
+                <option value="Club Card yearly">Club Card yearly</option>
+            </select>
+            <input type="submit" value="Order Now">
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

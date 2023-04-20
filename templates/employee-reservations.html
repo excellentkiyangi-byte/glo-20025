@@ -1,0 +1,19 @@
+{% extends 'base_admin_interface.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+<div class="main-block">
+
+    <h1>Reservation List</h1>
+    {% for reservation in reservations_list %}
+    <ul>
+        <li><a href="/employee/reservations/{{reservation['id']}}">#{{reservation['id']}} {{reservation['firstname']}} {{reservation['lastname']}}
+            {{reservation['carmake']}} {{reservation['regnumber']}}</a></li>
+    </ul>
+    {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,345 @@
+body {
+    margin: auto;
+}
+
+.menu-wrap {
+    width: auto;
+    background-image: linear-gradient(216deg,#ca4b3d 57%,#232323 100%)!important;
+    margin: auto;
+    height: 100px;
+}
+
+.menu {
+    padding-top: 20px;
+    padding-left: 300px;
+}
+
+.nav-bar, .nav-bar-link {
+    display: inline;
+    color: white;
+    font-size: 22px;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+.nav-bar-link {
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-bar-link:hover {
+    color: gold;
+    text-decoration: underline;
+}
+
+footer {
+    width: auto;
+    background-image: linear-gradient(216deg,#857c7b 57%,#232323 100%)!important;
+    margin: auto;
+    height: 300px;
+}
+
+.footer-wrap {
+    display: flex;
+    padding-left: 450px;
+}
+
+.footer-bar-link {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+.footer-bar-link:hover {
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+.footer-menu-first, .footer-menu-second, .footer-menu-third {
+    margin-right: 75px;
+    padding-top: 50px;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+
+.motto-block {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.motto {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.motto:hover {
+    color: goldenrod;
+}
+
+.about-header{
+    margin-left: 45%;
+}
+
+.about-content {
+    margin: 25px;
+}
+
+/* Style for the order form block */
+.order-form-block {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* Style for the headings */
+.order-form-block h3, .order-form-block h5, .order-form-block h6 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Style for the form */
+.order-form-block form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style for the input fields */
+.order-form-block input[type="text"], .order-form-block input[type="email"], .order-form-block input[type="tel"], .order-form-block select {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+/* Style for the select fields */
+.order-form-block select {
+  background-color: #f2f2f2;
+}
+
+/* Style for the submit button */
+.order-form-block input[type="submit"] {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover style for the submit button */
+.order-form-block input[type="submit"]:hover {
+  background-color: #0052a3;
+}
+
+
+/* Style for the order form */
+.order-form {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+/* Style for the input fields */
+.order-form input[type="text"], .order-form input[type="email"], .order-form input[type="tel"], .order-form select, .order-form input[type="date"] {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+/* Style for the select fields */
+.order-form select {
+  background-color: #fff;
+}
+
+/* Style for the submit button */
+.order-form input[type="submit"] {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover style for the submit button */
+.order-form input[type="submit"]:hover {
+  background-color: #0052a3;
+}
+
+/* Style for the labels */
+.order-form span {
+  display: block;
+  margin: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Style for the contact form */
+.contact-form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+}
+
+/* Style for the headings */
+.contact-form h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Style for the form */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for the input fields */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  padding: 6px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 5px #ccc;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Style for the textarea */
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Style for the submit button */
+.contact-form input[type="submit"] {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Hover style for the submit button */
+.contact-form input[type="submit"]:hover {
+  background-color: #0052a3;
+}
+
+/* Style for the flash messages */
+.contact-form p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: green;
+}
+
+/* Style for the newsletter form */
+.newsletter {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+}
+
+/* Style for the form */
+.newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the input fields */
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 5px #ccc;
+  width: calc(50% - 5px);
+}
+
+/* Style for the submit button */
+.newsletter input[type="submit"] {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover style for the submit button */
+.newsletter input[type="submit"]:hover {
+  background-color: #0052a3;
+}
+
+/* Style for the flash messages */
+.newsletter p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: green;
+}

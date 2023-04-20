@@ -1,0 +1,174 @@
+body {
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: rgb(104, 164, 205); 
+}
+
+.button {
+    background-color: rgb(34, 4, 83);
+    width: 50%;
+    color: aliceblue;
+    padding: 15px;
+    margin: 10px 0px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+    width: 35%;
+    margin-left: 500px;
+    margin-top: 100px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid green;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    margin-left: 135px;
+    border-radius: 10px;
+}
+
+.sidebar {
+    background: rgb(5 ,68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.sidebar ul li a:hover .icon,
+.sidebar ul li a.active .icon{
+    color: #0c7db1;
+}
+
+.sidebar ul li a:hover:before,
+.sidebar ul li a.active:before{
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.main-block {
+    padding-left: 225px;
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+/* Style for the member details table */
+.styled-table {
+  width: 80%;
+  margin-left: 250px;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ccc;
+  font-size: 0.9rem;
+}
+
+/* Style for the table header */
+.styled-table th {
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: bold;
+  background-color: #0066cc;
+  color: #fff;
+}
+
+/* Style for the table body */
+.styled-table td {
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  background-color: #fff;
+}
+
+/* Alternate row background color */
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover style for table rows */
+.styled-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Style for the member details table header */
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="../static/css/admin-style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="sidebar">
+        <ul>
+            <li><a href="/employee">Main Page</a></li>
+            <li><a href="/employee/members">Members</a></li>
+            <li><a href="/employee/reservations">Reservations</a></li>
+            <li><a href="/employee/support_center">Support</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </div>
+</div>
+{% block content %}
+
+{% endblock %}
+<script src="../static/js/script.js"></script>
+</body>
+</html>

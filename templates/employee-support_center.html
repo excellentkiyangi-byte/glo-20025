@@ -1,0 +1,15 @@
+{% extends 'base_admin_interface.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+<div class="main-block">
+    <h1>Support Tickets</h1>
+    {% for ticket in ticket_list %}
+        <p><a href="/employee/support_center/{{ticket['id']}}"># {{ticket['id']}} {{ticket['firstname']}} {{ticket['lastname']}}</a></p>
+    {% endfor %}
+
+</div>
+
+{% endblock %}

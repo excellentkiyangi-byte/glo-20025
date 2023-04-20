@@ -1,0 +1,72 @@
+{% extends 'base_user_interface.html' %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<div class="content">
+    <div class="content-header">
+        <h1>Car Wash Booking Request</h1>
+    </div>
+    <div class="order-body">
+        <div class="order-body-header">
+            <h3>Your Details:</h3>
+        </div>
+        <div class="order-form">
+            <form action="" method="POST">
+                <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+                <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="tel" name="phone" id="phone" placeholder="Phone Nr. ex.0123456789" required>
+                <input type="text" name="carmake" id="carmake" placeholder="Car Make Model" required>
+                <span>Car Type:</span>
+                <select name="cartype" id="cartype">
+                    <option value="SUV">SUV</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Crossover">Crossover</option>
+                    <option value="Convertible">Convertible</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="Sports Car">Sports Car</option>
+                    <option value="Coupe">Coupe</option>
+                    <option value="Minivan">Minivan</option>
+                    <option value="Station Wagon">Station Wagon</option>
+                    <option value="Pickup Truck">Pickup Truck</option>
+                </select>
+                <input type="text" name="regnumber" id="regnumber" placeholder="Reg. Nr.">
+                <span>Branch</span>
+                <select name="branch" id="branch">
+                    <option value="CarWash 1">CarWash 1</option>
+                    <option value="CarWash 2">CarWash 2</option>
+                    <option value="CarWash 3">CarWash 3</option>
+                    <option value="CarWash 4">CarWash 4</option>
+                    <option value="CarWash 5">CarWash 5</option>
+                </select>
+                <span>Service required:</span>
+                <select name="service" id="service">
+                    <option value="fullwash">Full Wash</option>
+                    <option value="halfwash ext">Half Wash (External Only)</option>
+                    <option value="halfwash int">Half Wash (Internal Only)</option>
+                </select>
+                <span>Choose Date</span>
+                <input type="date" id="date" name="date" min="{{ current_day }}">
+                <span>Choose Time:</span>
+                <select name="time" id="time">
+                    <option value="10am">10 AM</option>
+                    <option value="11am">11 AM</option>
+                    <option value="12am">12 AM</option>
+                    <option value="1pm">1 PM</option>
+                    <option value="2pm">2 PM</option>
+                    <option value="3pm">3 PM</option>
+                    <option value="4pm">4 PM</option>
+                    <option value="5pm">5 PM</option>
+                    <option value="6pm">6 PM</option>
+                    <option value="7pm">7 PM</option>
+                    <option value="8pm">8 PM</option>
+                </select>
+                <input type="submit" value="ORDER">
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
