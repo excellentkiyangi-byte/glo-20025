@@ -42,13 +42,13 @@ def offers():
         cursor.execute("SELECT * FROM abonnee WHERE email = %s", (email,))
         unique_email = cursor.fetchone()
         if unique_email:
-            flash('You are already subscribed to our Newsletters and Offers! Thank you!')
+            flash('Vous êtes déjà abonné à nos Newsletters et Offres ! Merci')
         elif not re.match(r'[^@]+@[^@]+\.[^@]+', email):
             pass
         else:
             cursor.execute("INSERT INTO abonnee VALUES (NULL, %s, %s, %s)", (firstname, lastname, email))
             mysql.connection.commit()
-            flash("You have been successfully subscribed to our NewsLetters and Offers")
+            flash("Vous avez été abonné avec succès à nos NewsLetters et Offres")
     return render_template('offers.html')
 
 
@@ -71,7 +71,7 @@ def membership():
             flash('Wrong phone number')
         else:
             cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-            cursor.execute("INSERT INTO membership VALUES (NULL, %s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+            cursor.execute("INSERT INTO membres VALUES (NULL, %s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                            (firstname, lastname, email, phone, address, city, postalcod, country, offer, gender))
             mysql.connection.commit()
             flash("Order Received!")
@@ -165,7 +165,7 @@ def employee():
 def employee_reservations():
     if 'loggedin' in session:
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute("SELECT id,firstname,lastname,carmake,regnr FROM reservations ORDER BY id DESC")
+        cursor.execute("SELECT rid,firstname,lastname,carmake,regnumber FROM reservations ORDER BY rid DESC")
         reservations_list = cursor.fetchall()
         return render_template('employee-reservations.html', reservations_list=reservations_list)
     else:
@@ -176,7 +176,7 @@ def employee_reservations():
 def employee_reservations_detailed(id):
     if 'loggedin' in session:
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute("SELECT * FROM reservations WHERE id = %s", (id,))
+        cursor.execute("SELECT * FROM reservations WHERE rid = %s", (id,))
         customer = cursor.fetchone()
         return render_template('reservation_details.html', customer=customer)
     else:
@@ -187,7 +187,7 @@ def employee_reservations_detailed(id):
 def employee_support_center():
     if 'loggedin' in session:
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute("SELECT id, firstname, lastname FROM contact ORDER BY id DESC")
+        cursor.execute("SELECT id, firstname, lastname FROM contact ORDER BY cid DESC")
         ticket_list = cursor.fetchall()
         return render_template('employee-support_center.html', ticket_list=ticket_list)
     else:
@@ -198,7 +198,7 @@ def employee_support_center():
 def employee_support_center_ticket_details(id):
     if 'loggedin' in session:
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute("SELECT * FROM contact WHERE id = %s", (id,))
+        cursor.execute("SELECT * FROM contact WHERE cid = %s", (id,))
         ticket = cursor.fetchone()
         return render_template('support_ticket.html', ticket=ticket)
     else:
@@ -209,7 +209,7 @@ def employee_support_center_ticket_details(id):
 def employee_members():
     if 'loggedin' in session:
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute("SELECT id, firstname, lastname FROM membres ORDER BY id ASC")
+        cursor.execute("SELECT mid, firstname, lastname FROM membres ORDER BY mid ASC")
         member_list = cursor.fetchall()
         return render_template('employee-members.html', member_list=member_list)
     else:
@@ -220,7 +220,7 @@ def employee_members():
 def employee_members_details(id):
     if 'loggedin' in session:
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute("SELECT * FROM membres WHERE id = %s", (id,))
+        cursor.execute("SELECT * FROM membres WHERE mid = %s", (id,))
         member = cursor.fetchone()
         return render_template("member_details.html", member=member)
 

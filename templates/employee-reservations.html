@@ -7,7 +7,7 @@
 
 <div class="main-block">
 
-    <h1>Reservation List</h1>
+    <h1>Liste de reservations</h1>
     {% for reservation in reservations_list %}
     <ul>
         <li><a href="/employee/reservations/{{reservation['id']}}">#{{reservation['id']}} {{reservation['firstname']}} {{reservation['lastname']}}

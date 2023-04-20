@@ -14,14 +14,14 @@
         </div>
         <div class="order-form">
             <form action="" method="POST">
-                <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
-                <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+                <input type="text" name="firstname" id="firstname" placeholder="Prenom" required>
+                <input type="text" name="lastname" id="lastname" placeholder="Nom" required>
                 <input type="email" name="email" id="email" placeholder="Email" required>
-                <input type="tel" name="phone" id="phone" placeholder="Phone Nr. ex.0123456789" required>
-                <input type="text" name="carmake" id="carmake" placeholder="Car Make Model" required>
-                <span>Car Type:</span>
+                <input type="tel" name="phone" id="phone" placeholder="Téléphone ex.0123456789" required>
+                <input type="text" name="carmake" id="carmake" placeholder="maque de la voiture" required>
+                <span>type de vehicule:</span>
                 <select name="cartype" id="cartype">
-                    <option value="SUV">SUV</option>
+                    <option value="SUV">VUS</option>
                     <option value="Hatchback">Hatchback</option>
                     <option value="Crossover">Crossover</option>
                     <option value="Convertible">Convertible</option>
@@ -32,36 +32,36 @@
                     <option value="Station Wagon">Station Wagon</option>
                     <option value="Pickup Truck">Pickup Truck</option>
                 </select>
-                <input type="text" name="regnumber" id="regnumber" placeholder="Reg. Nr.">
+                <input type="text" name="regnumber" id="regnumber" placeholder="regulation">
                 <span>Branch</span>
                 <select name="branch" id="branch">
-                    <option value="CarWash 1">CarWash 1</option>
-                    <option value="CarWash 2">CarWash 2</option>
-                    <option value="CarWash 3">CarWash 3</option>
-                    <option value="CarWash 4">CarWash 4</option>
-                    <option value="CarWash 5">CarWash 5</option>
+                    <option value="CarWash 1">Lave-Auto 1</option>
+                    <option value="CarWash 2">Lave-Auto 1</option>
+                    <option value="CarWash 3">Lave-Auto 1</option>
+                    <option value="CarWash 4">Lave-Auto 1</option>
+                    <option value="CarWash 5">Lave-Auto 1</option>
                 </select>
-                <span>Service required:</span>
+                <span>Service requis:</span>
                 <select name="service" id="service">
-                    <option value="fullwash">Full Wash</option>
-                    <option value="halfwash ext">Half Wash (External Only)</option>
-                    <option value="halfwash int">Half Wash (Internal Only)</option>
+                    <option value="fullwash">Lavage complet</option>
+                    <option value="halfwash ext">Demi-lavage (Externe uniquement)</option>
+                    <option value="halfwash int">Demi lavage(Interne Uniquement)</option>
                 </select>
-                <span>Choose Date</span>
+                <span>Choisir la date</span>
                 <input type="date" id="date" name="date" min="{{ current_day }}">
-                <span>Choose Time:</span>
+                <span>Choisir l'heure:</span>
                 <select name="time" id="time">
-                    <option value="10am">10 AM</option>
-                    <option value="11am">11 AM</option>
-                    <option value="12am">12 AM</option>
-                    <option value="1pm">1 PM</option>
-                    <option value="2pm">2 PM</option>
-                    <option value="3pm">3 PM</option>
-                    <option value="4pm">4 PM</option>
-                    <option value="5pm">5 PM</option>
-                    <option value="6pm">6 PM</option>
-                    <option value="7pm">7 PM</option>
-                    <option value="8pm">8 PM</option>
+                    <option value=10>10 AM</option>
+                    <option value=11>11 AM</option>
+                    <option value=12">12 AM</option>
+                    <option value=13">1 PM</option>
+                    <option value=14>2 PM</option>
+                    <option value=15>3 PM</option>
+                    <option value=16>4 PM</option>
+                    <option value=17>5 PM</option>
+                    <option value=18>6 PM</option>
+                    <option value=19>7 PM</option>
+                    <option value=20>8 PM</option>
                 </select>
                 <input type="submit" value="ORDER">
             </form>

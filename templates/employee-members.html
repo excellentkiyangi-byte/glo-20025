@@ -8,7 +8,7 @@
 <div class="main-block">
 
 
-    <h1>Member List</h1>
+    <h1>Liste de membres</h1>
     {% for member in member_list %}
         <p><a href="/employee/members/{{member['id']}}">{{member['id']}} {{member['firstname']}} {{member['lastname']}}</a></p>
     {% endfor %}
